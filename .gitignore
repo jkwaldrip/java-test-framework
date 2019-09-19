@@ -1,0 +1,13 @@
+# Mac OS X
+.DS_Store
+
+# IntelliJ
+.idea
+
+# Java
+build/
+out/
+
+# Gradle
+!gradle-wrapper.jar
+.gradle

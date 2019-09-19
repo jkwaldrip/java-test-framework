@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example.test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    // JUnit 4 Test Framework - Handles test execution
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    // AssertJ is a fluent assertion library - https://joel-costigliola.github.io/assertj/
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.13.2'
+    // Mockito is a framework for mocking classes and APIs in Java - https://site.mockito.org/
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
+    // JUnit Toolbox provides new ways of running tests; especially useful are the 
+    // parallel and pattern-matching test runners - https://github.com/MichaelTamm/junit-toolbox
+    testImplementation group: 'com.googlecode.junit-toolbox', name: 'junit-toolbox', version: '2.4'
+    // Simple Logging Facade 4 Java is a logging platform needed by some of these libraries
+    // Visit the web site for more information - https://www.slf4j.org/
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.28'
+    // Guava is a Google library for providing cleaner syntax and helpful convenience methods
+    // in Java - https://github.com/google/guava
+    implementation group: 'com.google.guava', name: 'guava', version: '23.0'
+    // Selenide is a fast and easy library for getting up and running with Selenium in Java
+    // Learn more at the Selenide website - https://selenide.org/
+    implementation group: 'com.codeborne', name: 'selenide', version: '5.3.1'
+    // Gson is Google's JSON serialization library - use it to convert Java classes into JSON
+    // and vice versa - https://github.com/google/gson
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    // Apache HTTP Client is a great way to craft both REST interactions and HTML form injections
+    // for testing a web application - http://hc.apache.org/httpcomponents-client-ga/index.html
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.10'
+    // Java Faker is a port of the popular Ruby Faker gem into Java; it provides 
+    // fake data such as names, addresses, lorem ipsum text, and many others!
+    // Learn more about it on Github - https://github.com/DiUS/java-faker
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.1'
+    // Apache Commons Lang 3 provides additional methods for Java, with functionality like
+    // string manipulation and random number/character generation - 
+    // https://commons.apache.org/proper/commons-lang/
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+}
